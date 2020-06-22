@@ -1,4 +1,4 @@
-# Swagger\Client\EventsApi
+# Coucounco\Airkey\Swagger\Client\EventsApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getEvent**
-> \Swagger\Client\Model\Event getEvent($event_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Event getEvent($event_id)
 
 Gets a specific event.
 
@@ -21,11 +21,11 @@ Returns information about a specific event.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\EventsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Event**](../Model/Event.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Event**](../Model/Event.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEvents**
-> \Swagger\Client\Model\EventPagingList getEvents($created_after, $type, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\EventPagingList getEvents($created_after, $type, $offset, $limit)
 
 Gets a list of events.
 
@@ -76,11 +76,11 @@ Returns a list of events (only returns events that are max. 7 days old), sorted 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\EventsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EventPagingList**](../Model/EventPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\EventPagingList**](../Model/EventPagingList.md)
 
 ### Authorization
 

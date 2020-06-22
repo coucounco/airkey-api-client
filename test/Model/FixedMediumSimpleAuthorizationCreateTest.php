@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * FixedMediumSimpleAuthorizationCreateTest Class Doc Comment
  *
  * @category    Class
  * @description Model that is same as SimpleAuthorizationCreate, only with a fixed medium id (can’t be manually set, context dependant retrieval).
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

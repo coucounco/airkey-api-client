@@ -1,4 +1,4 @@
-# Swagger\Client\CreditsApi
+# Coucounco\Airkey\Swagger\Client\CreditsApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCredits**
-> \Swagger\Client\Model\CreditInfo getCredits()
+> \Coucounco\Airkey\Swagger\Client\Model\CreditInfo getCredits()
 
 Gets available credit information.
 
@@ -20,11 +20,11 @@ Returns information about available credits of customer.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CreditsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\CreditsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\CreditInfo**](../Model/CreditInfo.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\CreditInfo**](../Model/CreditInfo.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\CustomerApi
+# Coucounco\Airkey\Swagger\Client\CustomerApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCustomerData**
-> \Swagger\Client\Model\Customer getCustomerData()
+> \Coucounco\Airkey\Swagger\Client\Model\Customer getCustomerData()
 
 Gets customer details.
 
@@ -20,11 +20,11 @@ Returns stored data of the customer.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CustomerApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Customer**](../Model/Customer.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Customer**](../Model/Customer.md)
 
 ### Authorization
 

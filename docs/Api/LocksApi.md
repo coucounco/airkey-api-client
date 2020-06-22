@@ -1,4 +1,4 @@
-# Swagger\Client\LocksApi
+# Coucounco\Airkey\Swagger\Client\LocksApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getLock**
-> \Swagger\Client\Model\Lock getLock($lock_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Lock getLock($lock_id)
 
 Gets information of a specific lock.
 
@@ -22,11 +22,11 @@ Returns a specific lock with its information.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LocksApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\LocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Lock**](../Model/Lock.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Lock**](../Model/Lock.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLocks**
-> \Swagger\Client\Model\LockPagingList getLocks($offset, $limit, $calendar_id)
+> \Coucounco\Airkey\Swagger\Client\Model\LockPagingList getLocks($offset, $limit, $calendar_id)
 
 Gets information of all locks.
 
@@ -77,11 +77,11 @@ Returns a list of all locks with their information, sorted by lock id in ascendi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LocksApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\LocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LockPagingList**](../Model/LockPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\LockPagingList**](../Model/LockPagingList.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLock**
-> \Swagger\Client\Model\Lock updateLock($lock_id, $body)
+> \Coucounco\Airkey\Swagger\Client\Model\Lock updateLock($lock_id, $body)
 
 Updates the provided lock.
 
@@ -136,18 +136,18 @@ Updates the provided lock and returns the new version of the lock object.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LocksApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\LocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $lock_id = 789; // int | Unique identifier of the lock
-$body = new \Swagger\Client\Model\Lock(); // \Swagger\Client\Model\Lock | Lock to be updated
+$body = new \Coucounco\Airkey\Swagger\Client\Model\Lock(); // \Coucounco\Airkey\Swagger\Client\Model\Lock | Lock to be updated
 
 try {
     $result = $apiInstance->updateLock($lock_id, $body);
@@ -163,11 +163,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **lock_id** | **int**| Unique identifier of the lock |
- **body** | [**\Swagger\Client\Model\Lock**](../Model/Lock.md)| Lock to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\Lock**](../Model/Lock.md)| Lock to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\Lock**](../Model/Lock.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Lock**](../Model/Lock.md)
 
 ### Authorization
 

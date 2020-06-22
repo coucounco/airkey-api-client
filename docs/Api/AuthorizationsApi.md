@@ -1,4 +1,4 @@
-# Swagger\Client\AuthorizationsApi
+# Coucounco\Airkey\Swagger\Client\AuthorizationsApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createOrFetchSimpleAuthorization**
-> \Swagger\Client\Model\Authorization createOrFetchSimpleAuthorization($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Authorization createOrFetchSimpleAuthorization($body)
 
 Creates simple authorizations
 
@@ -24,17 +24,17 @@ Creates an authorization of type 'SIMPLE' (same as using SimpleAuthorizationInfo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SimpleAuthorizationCreate(); // \Swagger\Client\Model\SimpleAuthorizationCreate | Authorization to be created
+$body = new \Coucounco\Airkey\Swagger\Client\Model\SimpleAuthorizationCreate(); // \Coucounco\Airkey\Swagger\Client\Model\SimpleAuthorizationCreate | Authorization to be created
 
 try {
     $result = $apiInstance->createOrFetchSimpleAuthorization($body);
@@ -49,11 +49,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SimpleAuthorizationCreate**](../Model/SimpleAuthorizationCreate.md)| Authorization to be created |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\SimpleAuthorizationCreate**](../Model/SimpleAuthorizationCreate.md)| Authorization to be created |
 
 ### Return type
 
-[**\Swagger\Client\Model\Authorization**](../Model/Authorization.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Authorization**](../Model/Authorization.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createOrUpdateAuthorizationsWithAdvancedOptions**
-> \Swagger\Client\Model\Authorization[] createOrUpdateAuthorizationsWithAdvancedOptions($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Authorization[] createOrUpdateAuthorizationsWithAdvancedOptions($body)
 
 Creates new and updates existing authorizations (advanced version - can be used to create/update all types of authorizations).
 
@@ -79,17 +79,17 @@ Creates the provided authorizations to be added in the access control system, up
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\AuthorizationChange(); // \Swagger\Client\Model\AuthorizationChange | Authorizations to be created or updated
+$body = new \Coucounco\Airkey\Swagger\Client\Model\AuthorizationChange(); // \Coucounco\Airkey\Swagger\Client\Model\AuthorizationChange | Authorizations to be created or updated
 
 try {
     $result = $apiInstance->createOrUpdateAuthorizationsWithAdvancedOptions($body);
@@ -104,11 +104,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AuthorizationChange**](../Model/AuthorizationChange.md)| Authorizations to be created or updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\AuthorizationChange**](../Model/AuthorizationChange.md)| Authorizations to be created or updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\Authorization[]**](../Model/Authorization.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Authorization[]**](../Model/Authorization.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAuthorization**
-> \Swagger\Client\Model\Authorization[] deleteAuthorization($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Authorization[] deleteAuthorization($body)
 
 Requests deletion of provided authorizations.
 
@@ -134,17 +134,17 @@ Requests and marks provided authorizations for deletion and returns a list of th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\AuthorizationDelete()); // \Swagger\Client\Model\AuthorizationDelete[] | Authorizations to be deleted
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\AuthorizationDelete()); // \Coucounco\Airkey\Swagger\Client\Model\AuthorizationDelete[] | Authorizations to be deleted
 
 try {
     $result = $apiInstance->deleteAuthorization($body);
@@ -159,11 +159,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AuthorizationDelete[]**](../Model/AuthorizationDelete.md)| Authorizations to be deleted |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\AuthorizationDelete[]**](../Model/AuthorizationDelete.md)| Authorizations to be deleted |
 
 ### Return type
 
-[**\Swagger\Client\Model\Authorization[]**](../Model/Authorization.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Authorization[]**](../Model/Authorization.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorization**
-> \Swagger\Client\Model\Authorization getAuthorization($authorization_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Authorization getAuthorization($authorization_id)
 
 Gets a specific authorization.
 
@@ -189,11 +189,11 @@ Returns a specific authorization for locks and areas defined in the access contr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Authorization**](../Model/Authorization.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Authorization**](../Model/Authorization.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorizations**
-> \Swagger\Client\Model\AuthorizationPagingList getAuthorizations($offset, $limit, $lock_id, $area_id, $medium_id, $person_id)
+> \Coucounco\Airkey\Swagger\Client\Model\AuthorizationPagingList getAuthorizations($offset, $limit, $lock_id, $area_id, $medium_id, $person_id)
 
 Gets all authorizations for locks and areas.
 
@@ -244,11 +244,11 @@ Returns a list of all authorizations for locks and areas defined in the access c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthorizationPagingList**](../Model/AuthorizationPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\AuthorizationPagingList**](../Model/AuthorizationPagingList.md)
 
 ### Authorization
 

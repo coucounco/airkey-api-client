@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * AreaPagingListTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes a list of areas defined in the access control system used for paging.
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

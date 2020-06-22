@@ -1,4 +1,4 @@
-# Swagger\Client\MediaApi
+# Coucounco\Airkey\Swagger\Client\MediaApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 
 # **assignOwnerToMedium**
-> \Swagger\Client\Model\MediumAssignment[] assignOwnerToMedium($body)
+> \Coucounco\Airkey\Swagger\Client\Model\MediumAssignment[] assignOwnerToMedium($body)
 
 Assigns a person to a medium for each provided assignment.
 
@@ -37,17 +37,17 @@ Creates a person assignment for a medium according to the provided list of assig
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\MediumAssignment()); // \Swagger\Client\Model\MediumAssignment[] | List of medium assignments
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\MediumAssignment()); // \Coucounco\Airkey\Swagger\Client\Model\MediumAssignment[] | List of medium assignments
 
 try {
     $result = $apiInstance->assignOwnerToMedium($body);
@@ -62,11 +62,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MediumAssignment[]**](../Model/MediumAssignment.md)| List of medium assignments |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\MediumAssignment[]**](../Model/MediumAssignment.md)| List of medium assignments |
 
 ### Return type
 
-[**\Swagger\Client\Model\MediumAssignment[]**](../Model/MediumAssignment.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\MediumAssignment[]**](../Model/MediumAssignment.md)
 
 ### Authorization
 
@@ -92,17 +92,17 @@ Cancels the person assignments of the provided list of media and returns a list 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | List of unique medium identifiers
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\int[]()); // int[] | List of unique medium identifiers
 
 try {
     $result = $apiInstance->cancelMediumAssignments($body);
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createPhones**
-> \Swagger\Client\Model\Phone[] createPhones($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone[] createPhones($body)
 
 Adds list of new phones.
 
@@ -147,17 +147,17 @@ Creates and adds the provided phones to the access control system and returns a 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\PhoneCreate()); // \Swagger\Client\Model\PhoneCreate[] | List of phones to be added
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\PhoneCreate()); // \Coucounco\Airkey\Swagger\Client\Model\PhoneCreate[] | List of phones to be added
 
 try {
     $result = $apiInstance->createPhones($body);
@@ -172,11 +172,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PhoneCreate[]**](../Model/PhoneCreate.md)| List of phones to be added |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\PhoneCreate[]**](../Model/PhoneCreate.md)| List of phones to be added |
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone[]**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone[]**](../Model/Phone.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deactivateMedium**
-> \Swagger\Client\Model\Medium deactivateMedium($medium_id, $reason, $comment)
+> \Coucounco\Airkey\Swagger\Client\Model\Medium deactivateMedium($medium_id, $reason, $comment)
 
 Deactivates provided medium.
 
@@ -202,11 +202,11 @@ Deactivates the provided medium and returns a new version of the medium object. 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Medium**](../Model/Medium.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Medium**](../Model/Medium.md)
 
 ### Authorization
 
@@ -261,17 +261,17 @@ Deletes the provided phones and returns a list of identifiers of all deleted obj
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | List of unique identifiers of all phones to be deleted
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\int[]()); // int[] | List of unique identifiers of all phones to be deleted
 
 try {
     $result = $apiInstance->deletePhones($body);
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **emptyMedium**
-> \Swagger\Client\Model\Medium emptyMedium($medium_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Medium emptyMedium($medium_id)
 
 Empties provided medium.
 
@@ -316,11 +316,11 @@ Empties the provided medium and returns a new version of the medium object. All 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Medium**](../Model/Medium.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Medium**](../Model/Medium.md)
 
 ### Authorization
 
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **generatePairingCodeForPhone**
-> \Swagger\Client\Model\Phone generatePairingCodeForPhone($phone_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone generatePairingCodeForPhone($phone_id)
 
 Generates a new pairing code for a phone.
 
@@ -371,11 +371,11 @@ Generates a new pairing code for the provided phone and returns a new version of
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone**](../Model/Phone.md)
 
 ### Authorization
 
@@ -414,7 +414,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCard**
-> \Swagger\Client\Model\Card getCard($card_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Card getCard($card_id)
 
 Gets information of specific card.
 
@@ -426,11 +426,11 @@ Returns all information of provided medium of type 'card'.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -455,7 +455,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Card**](../Model/Card.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Card**](../Model/Card.md)
 
 ### Authorization
 
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCards**
-> \Swagger\Client\Model\CardPagingList getCards($person_id, $assignment_status, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\CardPagingList getCards($person_id, $assignment_status, $offset, $limit)
 
 Gets information of all cards.
 
@@ -481,11 +481,11 @@ Returns a list of all media of type 'card' defined in the access control system.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -516,7 +516,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CardPagingList**](../Model/CardPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\CardPagingList**](../Model/CardPagingList.md)
 
 ### Authorization
 
@@ -530,7 +530,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMedia**
-> \Swagger\Client\Model\MediumPagingList getMedia($person_id, $assignment_status, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\MediumPagingList getMedia($person_id, $assignment_status, $offset, $limit)
 
 Gets information of all media.
 
@@ -542,11 +542,11 @@ Returns a list of all media defined in the access control system, sorted by medi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -577,7 +577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MediumPagingList**](../Model/MediumPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\MediumPagingList**](../Model/MediumPagingList.md)
 
 ### Authorization
 
@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMedium**
-> \Swagger\Client\Model\Medium getMedium($medium_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Medium getMedium($medium_id)
 
 Gets information of a specific medium.
 
@@ -603,11 +603,11 @@ Returns all information of a specific medium defined in the access control syste
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -632,7 +632,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Medium**](../Model/Medium.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Medium**](../Model/Medium.md)
 
 ### Authorization
 
@@ -646,7 +646,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhone**
-> \Swagger\Client\Model\Phone getPhone($phone_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone getPhone($phone_id)
 
 Gets information of specific phone.
 
@@ -658,11 +658,11 @@ Returns all information of provided medium of type 'phone'.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -687,7 +687,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone**](../Model/Phone.md)
 
 ### Authorization
 
@@ -701,7 +701,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhones**
-> \Swagger\Client\Model\PhonePagingList getPhones($person_id, $assignment_status, $phone_number, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\PhonePagingList getPhones($person_id, $assignment_status, $phone_number, $offset, $limit)
 
 Gets information of all phones.
 
@@ -713,11 +713,11 @@ Returns a list of all media of type 'phone' defined in the access control system
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -750,7 +750,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PhonePagingList**](../Model/PhonePagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\PhonePagingList**](../Model/PhonePagingList.md)
 
 ### Authorization
 
@@ -764,7 +764,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **reactivateMedium**
-> \Swagger\Client\Model\Medium reactivateMedium($medium_id, $reason, $recover_authorizations, $comment)
+> \Coucounco\Airkey\Swagger\Client\Model\Medium reactivateMedium($medium_id, $reason, $recover_authorizations, $comment)
 
 Reactivates provided medium.
 
@@ -776,11 +776,11 @@ Reactivates the provided medium and returns a new version of the medium object. 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -811,7 +811,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Medium**](../Model/Medium.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Medium**](../Model/Medium.md)
 
 ### Authorization
 
@@ -825,7 +825,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resetPinOfPhone**
-> \Swagger\Client\Model\Phone resetPinOfPhone($phone_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone resetPinOfPhone($phone_id)
 
 Resets PIN of the phone.
 
@@ -837,11 +837,11 @@ Resets the PIN of the provided phone and returns new version of the phone object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -866,7 +866,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone**](../Model/Phone.md)
 
 ### Authorization
 
@@ -880,7 +880,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendRegistrationCodeToPhone**
-> \Swagger\Client\Model\Phone sendRegistrationCodeToPhone($phone_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone sendRegistrationCodeToPhone($phone_id)
 
 Sends pairing code to phone.
 
@@ -892,11 +892,11 @@ Sends a generated pairing code per SMS to the phone and returns a new version of
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -921,7 +921,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone**](../Model/Phone.md)
 
 ### Authorization
 
@@ -935,7 +935,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCards**
-> \Swagger\Client\Model\Card[] updateCards($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Card[] updateCards($body)
 
 Updates list of cards.
 
@@ -947,17 +947,17 @@ Updates the provided list of cards and returns a list of new object versions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\Card()); // \Swagger\Client\Model\Card[] | List of cards to be updated
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\Card()); // \Coucounco\Airkey\Swagger\Client\Model\Card[] | List of cards to be updated
 
 try {
     $result = $apiInstance->updateCards($body);
@@ -972,11 +972,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Card[]**](../Model/Card.md)| List of cards to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\Card[]**](../Model/Card.md)| List of cards to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\Card[]**](../Model/Card.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Card[]**](../Model/Card.md)
 
 ### Authorization
 
@@ -990,7 +990,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePhones**
-> \Swagger\Client\Model\Phone[] updatePhones($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Phone[] updatePhones($body)
 
 Updates list of phones.
 
@@ -1002,17 +1002,17 @@ Updates the provided list of phones and returns a list of new object versions. P
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\MediaApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\Phone()); // \Swagger\Client\Model\Phone[] | List of phones to be updated
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\Phone()); // \Coucounco\Airkey\Swagger\Client\Model\Phone[] | List of phones to be updated
 
 try {
     $result = $apiInstance->updatePhones($body);
@@ -1027,11 +1027,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Phone[]**](../Model/Phone.md)| List of phones to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\Phone[]**](../Model/Phone.md)| List of phones to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\Phone[]**](../Model/Phone.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Phone[]**](../Model/Phone.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * AuthorizationTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes an authorization defined in the access control system (NOTE: Either the lock or the area is set, not both).
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -1,4 +1,4 @@
-# Swagger\Client\PersonsApi
+# Coucounco\Airkey\Swagger\Client\PersonsApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createPersons**
-> \Swagger\Client\Model\Person[] createPersons($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Person[] createPersons($body)
 
 Adds list of new persons.
 
@@ -24,17 +24,17 @@ Creates and adds the provided persons to the access control system and returns a
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\PersonsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\PersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\PersonCreate()); // \Swagger\Client\Model\PersonCreate[] | List of persons to be added
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\PersonCreate()); // \Coucounco\Airkey\Swagger\Client\Model\PersonCreate[] | List of persons to be added
 
 try {
     $result = $apiInstance->createPersons($body);
@@ -49,11 +49,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PersonCreate[]**](../Model/PersonCreate.md)| List of persons to be added |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\PersonCreate[]**](../Model/PersonCreate.md)| List of persons to be added |
 
 ### Return type
 
-[**\Swagger\Client\Model\Person[]**](../Model/Person.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Person[]**](../Model/Person.md)
 
 ### Authorization
 
@@ -79,17 +79,17 @@ Deletes the provided persons and returns a list of identifiers of all deleted ob
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\PersonsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\PersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | List of unique identifiers of all persons to be deleted
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\int[]()); // int[] | List of unique identifiers of all persons to be deleted
 
 try {
     $result = $apiInstance->deletePersons($body);
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPerson**
-> \Swagger\Client\Model\Person getPerson($person_id)
+> \Coucounco\Airkey\Swagger\Client\Model\Person getPerson($person_id)
 
 Gets a specific person.
 
@@ -134,11 +134,11 @@ Returns a specific person defined in the access control system.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\PersonsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\PersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Person**](../Model/Person.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Person**](../Model/Person.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersons**
-> \Swagger\Client\Model\PersonPagingList getPersons($offset, $limit, $first_name, $last_name, $secondary_identification, $search)
+> \Coucounco\Airkey\Swagger\Client\Model\PersonPagingList getPersons($offset, $limit, $first_name, $last_name, $secondary_identification, $search)
 
 Gets all persons.
 
@@ -189,11 +189,11 @@ Returns a list of all persons defined in the access control system, sorted by pe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\PersonsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\PersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PersonPagingList**](../Model/PersonPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\PersonPagingList**](../Model/PersonPagingList.md)
 
 ### Authorization
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePersons**
-> \Swagger\Client\Model\Person[] updatePersons($body)
+> \Coucounco\Airkey\Swagger\Client\Model\Person[] updatePersons($body)
 
 Updates list of persons.
 
@@ -254,17 +254,17 @@ Updates the provided list of persons and returns a list of new object versions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\PersonsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\PersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\Person()); // \Swagger\Client\Model\Person[] | List of persons to be updated
+$body = array(new \Coucounco\Airkey\Swagger\Client\Model\Person()); // \Coucounco\Airkey\Swagger\Client\Model\Person[] | List of persons to be updated
 
 try {
     $result = $apiInstance->updatePersons($body);
@@ -279,11 +279,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Person[]**](../Model/Person.md)| List of persons to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\Person[]**](../Model/Person.md)| List of persons to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\Person[]**](../Model/Person.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\Person[]**](../Model/Person.md)
 
 ### Authorization
 

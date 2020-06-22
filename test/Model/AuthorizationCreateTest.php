@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * AuthorizationCreateTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes an authorization of a medium to be created in the access control system (NOTE: Either the lockId or the areaId must be set, not both).
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

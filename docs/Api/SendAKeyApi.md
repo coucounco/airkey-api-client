@@ -1,4 +1,4 @@
-# Swagger\Client\SendAKeyApi
+# Coucounco\Airkey\Swagger\Client\SendAKeyApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **sendAKey**
-> \Swagger\Client\Model\SendAKeyResponse sendAKey($body)
+> \Coucounco\Airkey\Swagger\Client\Model\SendAKeyResponse sendAKey($body)
 
 Sends a registration code to the phone and creates all necessary prerequisites if needed.
 
@@ -20,17 +20,17 @@ Based on the given phone number this request sends a registration link via SMS f
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SendAKeyApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\SendAKeyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SendAKeyRequest(); // \Swagger\Client\Model\SendAKeyRequest | Send-A-Key request wrapper
+$body = new \Coucounco\Airkey\Swagger\Client\Model\SendAKeyRequest(); // \Coucounco\Airkey\Swagger\Client\Model\SendAKeyRequest | Send-A-Key request wrapper
 
 try {
     $result = $apiInstance->sendAKey($body);
@@ -45,11 +45,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SendAKeyRequest**](../Model/SendAKeyRequest.md)| Send-A-Key request wrapper |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\SendAKeyRequest**](../Model/SendAKeyRequest.md)| Send-A-Key request wrapper |
 
 ### Return type
 
-[**\Swagger\Client\Model\SendAKeyResponse**](../Model/SendAKeyResponse.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\SendAKeyResponse**](../Model/SendAKeyResponse.md)
 
 ### Authorization
 

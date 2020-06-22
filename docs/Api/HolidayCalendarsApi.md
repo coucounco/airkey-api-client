@@ -1,4 +1,4 @@
-# Swagger\Client\HolidayCalendarsApi
+# Coucounco\Airkey\Swagger\Client\HolidayCalendarsApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **createHolidayCalendarSlot**
-> \Swagger\Client\Model\HolidayCalendar createHolidayCalendarSlot($holiday_calendar_id, $body)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar createHolidayCalendarSlot($holiday_calendar_id, $body)
 
 Adds a new holiday calendar slot to the holiday calendar.
 
@@ -27,18 +27,18 @@ Creates and adds the holiday calendar slot to the provided holiday calendar and 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar with which the holiday calendar slot should be associated
-$body = new \Swagger\Client\Model\HolidayCalendarSlotCreate(); // \Swagger\Client\Model\HolidayCalendarSlotCreate | Holiday calendar slot to be added
+$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotCreate(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotCreate | Holiday calendar slot to be added
 
 try {
     $result = $apiInstance->createHolidayCalendarSlot($holiday_calendar_id, $body);
@@ -54,11 +54,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar with which the holiday calendar slot should be associated |
- **body** | [**\Swagger\Client\Model\HolidayCalendarSlotCreate**](../Model/HolidayCalendarSlotCreate.md)| Holiday calendar slot to be added |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotCreate**](../Model/HolidayCalendarSlotCreate.md)| Holiday calendar slot to be added |
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteHolidayCalendarSlot**
-> \Swagger\Client\Model\HolidayCalendar deleteHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar deleteHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body)
 
 Deletes provided holiday calendar slot.
 
@@ -84,11 +84,11 @@ Deletes the provided holiday calendar slot and returns the new holiday calendar 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -96,7 +96,7 @@ $apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
 );
 $holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar with which the holiday calendar slot is associated
 $holiday_calendar_slot_id = 789; // int | Unique identifier of the holiday calendar slot to be deleted
-$body = new \Swagger\Client\Model\HolidayCalendarSlotDelete(); // \Swagger\Client\Model\HolidayCalendarSlotDelete | Holiday calendar slot to be deleted
+$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotDelete(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotDelete | Holiday calendar slot to be deleted
 
 try {
     $result = $apiInstance->deleteHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body);
@@ -113,11 +113,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar with which the holiday calendar slot is associated |
  **holiday_calendar_slot_id** | **int**| Unique identifier of the holiday calendar slot to be deleted |
- **body** | [**\Swagger\Client\Model\HolidayCalendarSlotDelete**](../Model/HolidayCalendarSlotDelete.md)| Holiday calendar slot to be deleted |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotDelete**](../Model/HolidayCalendarSlotDelete.md)| Holiday calendar slot to be deleted |
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHolidayCalendar**
-> \Swagger\Client\Model\HolidayCalendar getHolidayCalendar($holiday_calendar_id)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar getHolidayCalendar($holiday_calendar_id)
 
 Gets a specific holiday calendar.
 
@@ -143,11 +143,11 @@ Returns information about a specific holiday calendar defined in the access cont
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHolidayCalendarSlot**
-> \Swagger\Client\Model\HolidayCalendarSlot getHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlot getHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id)
 
 Gets a specific holiday calendar slot.
 
@@ -198,11 +198,11 @@ Returns information about a specific holiday calendar slot of the holiday calend
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendarSlot**](../Model/HolidayCalendarSlot.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlot**](../Model/HolidayCalendarSlot.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHolidayCalendars**
-> \Swagger\Client\Model\HolidayCalendarList getHolidayCalendars()
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarList getHolidayCalendars()
 
 Gets all holiday calendars.
 
@@ -255,11 +255,11 @@ Returns all available holiday calendars defined in the access control system, so
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -280,7 +280,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendarList**](../Model/HolidayCalendarList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarList**](../Model/HolidayCalendarList.md)
 
 ### Authorization
 
@@ -294,7 +294,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLocksByCalendarId**
-> \Swagger\Client\Model\LockPagingList getLocksByCalendarId($holiday_calendar_id, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\LockPagingList getLocksByCalendarId($holiday_calendar_id, $offset, $limit)
 
 Gets all locks using the holiday calendar.
 
@@ -306,11 +306,11 @@ Returns a list of all locks that are currently using the provided holiday calend
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LockPagingList**](../Model/LockPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\LockPagingList**](../Model/LockPagingList.md)
 
 ### Authorization
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHolidayCalendar**
-> \Swagger\Client\Model\HolidayCalendar updateHolidayCalendar($holiday_calendar_id, $body)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar updateHolidayCalendar($holiday_calendar_id, $body)
 
 Updates the holiday calendar.
 
@@ -365,18 +365,18 @@ Updates the provided holiday calendar and returns the new holiday calendar objec
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar to be updated
-$body = new \Swagger\Client\Model\HolidayCalendar(); // \Swagger\Client\Model\HolidayCalendar | Holiday calendar to be updated
+$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar | Holiday calendar to be updated
 
 try {
     $result = $apiInstance->updateHolidayCalendar($holiday_calendar_id, $body);
@@ -392,11 +392,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar to be updated |
- **body** | [**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)| Holiday calendar to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)| Holiday calendar to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
 
 ### Authorization
 
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHolidayCalendarSlot**
-> \Swagger\Client\Model\HolidayCalendar updateHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body)
+> \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar updateHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body)
 
 Updates a holiday calendar slot of the holiday calendar.
 
@@ -422,11 +422,11 @@ Updates the provided holiday calendar slot and returns the new holiday calendar 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -434,7 +434,7 @@ $apiInstance = new Swagger\Client\Api\HolidayCalendarsApi(
 );
 $holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar with which the holiday calendar slot is associated
 $holiday_calendar_slot_id = 789; // int | Unique identifier of the holiday calendar slot to be updated
-$body = new \Swagger\Client\Model\HolidayCalendarSlotUpdate(); // \Swagger\Client\Model\HolidayCalendarSlotUpdate | Holiday calendar slot to be updated
+$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotUpdate(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotUpdate | Holiday calendar slot to be updated
 
 try {
     $result = $apiInstance->updateHolidayCalendarSlot($holiday_calendar_id, $holiday_calendar_slot_id, $body);
@@ -451,11 +451,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar with which the holiday calendar slot is associated |
  **holiday_calendar_slot_id** | **int**| Unique identifier of the holiday calendar slot to be updated |
- **body** | [**\Swagger\Client\Model\HolidayCalendarSlotUpdate**](../Model/HolidayCalendarSlotUpdate.md)| Holiday calendar slot to be updated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendarSlotUpdate**](../Model/HolidayCalendarSlotUpdate.md)| Holiday calendar slot to be updated |
 
 ### Return type
 
-[**\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)
 
 ### Authorization
 

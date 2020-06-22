@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * EventDetailsTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes further details of an event in the access control system (different for every event type). Possible types of event details are: &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-AppPairedEventDetails\&quot;&gt;AppPairedEventDetails&lt;/a&gt;: describes an event where a phone was successfully paired (\&quot;mediumId\&quot;)&lt;br/&gt;&lt;a href&#x3D;\&quot;#model-AuthorizationSynchronizedEventDetails\&quot;&gt;AuthorizationSynchronizedEventDetails&lt;/a&gt;: describes an event where authorizations were synchronized (\&quot;mediumId\&quot;, \&quot;syncedAuthorizationList\&quot;) &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-UnlockingEventDetails\&quot;&gt;UnlockingEventDetails&lt;a/&gt;: describes an event where a locking component was unlocked (\&quot;lockId\&quot;, \&quot;mediumId\&quot;, \&quot;unlockingTimestamp\&quot;)
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

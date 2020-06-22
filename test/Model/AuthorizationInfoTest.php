@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * AuthorizationInfoTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes details of an authorization. Possible types of authorizations are: &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-PermanentAuthorizationInfo\&quot;&gt;PermanentAuthorizationInfo&lt;/a&gt;: describes a permanent authorization with or without an expiration date (\&quot;validFromDate\&quot;, \&quot;validToDate\&quot;) &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-PeriodicalAuthorizationInfo\&quot;&gt;PeriodicalAuthorizationInfo&lt;/a&gt;: describes an authorization with periodic access with or without an expiration date (\&quot;periodicalPeriods\&quot;, \&quot;validFromDate\&quot;, \&quot;validToDate\&quot;) &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-OneDayAuthorizationInfo\&quot;&gt;OneDayAuthorizationInfo&lt;/a&gt;: describes a temporary authorization for a day or a period of the day (\&quot;validAtDate\&quot;, \&quot;startTime\&quot;, \&quot;endTime\&quot;) &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-SimpleAuthorizationInfo\&quot;&gt;SimpleAuthorizationInfo&lt;/a&gt;: describes an authorization for basic needs, e.g., multi-day-capability, from-to with minute granularity, no gaps, no holiday calendar (\&quot;validFrom\&quot;, \&quot;validTo\&quot;)
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

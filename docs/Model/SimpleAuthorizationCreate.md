@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authorization_info** | [**\Swagger\Client\Model\SimpleAuthorizationInfo**](SimpleAuthorizationInfo.md) | Details of a simple authorization | 
+**authorization_info** | [**\Coucounco\Airkey\Swagger\Client\Model\SimpleAuthorizationInfo**](SimpleAuthorizationInfo.md) | Details of a simple authorization | 
 **medium_id** | **int** | Medium to which this authorization should be defined | 
 **lock_id** | **int** | Lock for which the medium should be authorized. Required when no area id is set. | [optional] 
 **area_id** | **int** | Area for which the medium should be authorized. Required when no lock id is set. | [optional] 

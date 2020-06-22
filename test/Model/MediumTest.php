@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Coucounco\Airkey\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Coucounco\Airkey\Swagger\Client;
 
 /**
  * MediumTest Class Doc Comment
  *
  * @category    Class
  * @description Model that describes a medium defined in the access control system. Possible types of media are: &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-Phone\&quot;&gt;Phone&lt;/a&gt;: describes a phone (\&quot;appType\&quot;, \&quot;platformVersion\&quot;, \&quot;phoneSettings\&quot;, \&quot;pairingCode\&quot;, \&quot;pairingCodeValidUntil\&quot;, \&quot;phoneNumber\&quot;, \&quot;sentKeyOn\&quot;) &lt;br/&gt;&lt;a href&#x3D;\&quot;#model-Card\&quot;&gt;Card&lt;/a&gt;: describes a card
- * @package     Swagger\Client
+ * @package     Coucounco\Airkey\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -1,4 +1,4 @@
-# Swagger\Client\SystemProtocolApi
+# Coucounco\Airkey\Swagger\Client\SystemProtocolApi
 
 All URIs are relative to *https://integration.api.airkey.evva.com:443/cloud*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSystemProtocol**
-> \Swagger\Client\Model\SystemProtocolPagingList getSystemProtocol($offset, $limit, $id, $lock_id, $medium_id, $event, $user_id, $administrator, $from, $to, $language)
+> \Coucounco\Airkey\Swagger\Client\Model\SystemProtocolPagingList getSystemProtocol($offset, $limit, $id, $lock_id, $medium_id, $event, $user_id, $administrator, $from, $to, $language)
 
 Gets system protocol.
 
@@ -20,11 +20,11 @@ Returns the system protocol with all events that were conducted by the administr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: X-API-Key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
+$config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
+// $config = Coucounco\Airkey\Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SystemProtocolApi(
+$apiInstance = new Coucounco\Airkey\Swagger\Client\Api\SystemProtocolApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SystemProtocolPagingList**](../Model/SystemProtocolPagingList.md)
+[**\Coucounco\Airkey\Swagger\Client\Model\SystemProtocolPagingList**](../Model/SystemProtocolPagingList.md)
 
 ### Authorization
 
