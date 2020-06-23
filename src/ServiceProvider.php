@@ -18,5 +18,9 @@ class ServiceProvider extends SP
     public function register()
     {
         //
+        $this->app->bind('airkey:facade', function () {
+            return new AirKeyApi();
+        });
+
     }
 }
