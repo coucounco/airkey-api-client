@@ -9,6 +9,7 @@ use Coucounco\Airkey\Swagger\Client\Api\MediaApi;
 use Coucounco\Airkey\Swagger\Client\Api\PersonsApi;
 use Coucounco\Airkey\Swagger\Client\Api\PublicMgmtApi;
 use Coucounco\Airkey\Swagger\Client\Api\SendAKeyApi;
+use GuzzleHttp\ClientInterface;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static LocksApi locksApi()
  * @method static SendAKeyApi sendKeyApi()
  * @method static PublicMgmtApi publicMgmtApi()
+ * @method static void mockClient(ClientInterface $client)
 
  *
  * @see AirKeyApi
