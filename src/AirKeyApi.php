@@ -24,6 +24,10 @@ class AirKeyApi
         $this->factory = new ApiFactory($client, $config);
     }
 
+    public function mockClient(ClientInterface $client) {
+        $this->factory->setClient($client);
+    }
+
     public function personsApi() {
         return $this->factory->build(PersonsApi::class);
     }

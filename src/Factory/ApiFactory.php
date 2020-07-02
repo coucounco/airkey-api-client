@@ -26,6 +26,10 @@ class ApiFactory
         $this->config = $config;
     }
 
+    public function setClient(ClientInterface $client) {
+        $this->client = $client;
+    }
+
     public function build($apiClassName) {
         return new $apiClassName($this->client, $this->config);
     }
