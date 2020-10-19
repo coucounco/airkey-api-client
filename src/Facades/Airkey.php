@@ -4,6 +4,7 @@ namespace Coucounco\Airkey\Swagger\Client\Facades;
 
 use Coucounco\Airkey\Swagger\Client\AirKeyApi;
 use Coucounco\Airkey\Swagger\Client\Api\AreasApi;
+use Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi;
 use Coucounco\Airkey\Swagger\Client\Api\LocksApi;
 use Coucounco\Airkey\Swagger\Client\Api\MediaApi;
 use Coucounco\Airkey\Swagger\Client\Api\PersonsApi;
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static LocksApi locksApi()
  * @method static SendAKeyApi sendKeyApi()
  * @method static PublicMgmtApi publicMgmtApi()
+ * @method static AuthorizationsApi authorizationsApi()
  * @method static void mockClient(ClientInterface $client)
 
  *

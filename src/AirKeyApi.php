@@ -2,6 +2,7 @@
 namespace Coucounco\Airkey\Swagger\Client;
 
 use Coucounco\Airkey\Swagger\Client\Api\AreasApi;
+use Coucounco\Airkey\Swagger\Client\Api\AuthorizationsApi;
 use Coucounco\Airkey\Swagger\Client\Api\LocksApi;
 use Coucounco\Airkey\Swagger\Client\Api\MediaApi;
 use Coucounco\Airkey\Swagger\Client\Api\PersonsApi;
@@ -48,6 +49,10 @@ class AirKeyApi
 
     public function sendKeyApi() {
         return $this->factory->build(SendAKeyApi::class);
+    }
+
+    public function authorizationsApi() {
+        return $this->factory->build(AuthorizationsApi::class);
     }
 
     public function publicMgmtApi() {
