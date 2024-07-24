@@ -22,7 +22,7 @@ class AirKeyApi
         // Configure API key authorization: X-API-Key
         $config = Configuration::getDefaultConfiguration()
             ->setApiKey('X-API-Key', config('airkey.key'))
-            ->setHost(config('airkey.endpoint'));
+             ->setHost(config('airkey.endpoint'));
         $client = new Client();
         $this->factory = new ApiFactory($client, $config);
     }
