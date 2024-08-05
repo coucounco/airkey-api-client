@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getMaintenanceTasks**
-> \Coucounco\Airkey\Swagger\Client\Model\MaintenanceTaskPagingList getMaintenanceTasks($lock_id, $lock_identifier, $door_name, $offset, $limit)
+> \Coucounco\Airkey\Swagger\Client\Model\MaintenanceTaskPagingList getMaintenanceTasks($lock_id, $lock_identifier, $door_name, $alternative_door_name, $offset, $limit)
 
 Gets all maintenance tasks.
 
@@ -33,11 +33,12 @@ $apiInstance = new Coucounco\Airkey\Swagger\Client\Api\MaintenanceTasksApi(
 $lock_id = 789; // int | Filter maintenance tasks by lock id
 $lock_identifier = "lock_identifier_example"; // string | Filter maintenance tasks by lock identifier
 $door_name = "door_name_example"; // string | Filter maintenance tasks by door name
+$alternative_door_name = "alternative_door_name_example"; // string | Filter maintenance tasks by alternative door name
 $offset = 56; // int | Offset for paging
 $limit = 56; // int | Limit of result size
 
 try {
-    $result = $apiInstance->getMaintenanceTasks($lock_id, $lock_identifier, $door_name, $offset, $limit);
+    $result = $apiInstance->getMaintenanceTasks($lock_id, $lock_identifier, $door_name, $alternative_door_name, $offset, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MaintenanceTasksApi->getMaintenanceTasks: ', $e->getMessage(), PHP_EOL;
@@ -52,6 +53,7 @@ Name | Type | Description  | Notes
  **lock_id** | **int**| Filter maintenance tasks by lock id | [optional]
  **lock_identifier** | **string**| Filter maintenance tasks by lock identifier | [optional]
  **door_name** | **string**| Filter maintenance tasks by door name | [optional]
+ **alternative_door_name** | **string**| Filter maintenance tasks by alternative door name | [optional]
  **offset** | **int**| Offset for paging | [optional]
  **limit** | **int**| Limit of result size | [optional]
 

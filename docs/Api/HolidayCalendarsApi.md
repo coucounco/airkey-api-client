@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**getHolidayCalendarSlot**](HolidayCalendarsApi.md#getHolidayCalendarSlot) | **GET** /v1/holiday-calendars/{holidayCalendarId}/slots/{holidayCalendarSlotId} | Gets a specific holiday calendar slot.
 [**getHolidayCalendars**](HolidayCalendarsApi.md#getHolidayCalendars) | **GET** /v1/holiday-calendars | Gets all holiday calendars.
 [**getLocksByCalendarId**](HolidayCalendarsApi.md#getLocksByCalendarId) | **GET** /v1/holiday-calendars/{holidayCalendarId}/locks | Gets all locks using the holiday calendar.
-[**updateHolidayCalendar**](HolidayCalendarsApi.md#updateHolidayCalendar) | **PUT** /v1/holiday-calendars/{holidayCalendarId} | Updates the holiday calendar.
+[**updateHolidayCalendar**](HolidayCalendarsApi.md#updateHolidayCalendar) | **PUT** /v1/holiday-calendars/{holidayCalendarId} | Activates or deactivates the holiday calendar.
 [**updateHolidayCalendarSlot**](HolidayCalendarsApi.md#updateHolidayCalendarSlot) | **PUT** /v1/holiday-calendars/{holidayCalendarId}/slots/{holidayCalendarSlotId} | Updates a holiday calendar slot of the holiday calendar.
 
 
@@ -355,9 +355,9 @@ Name | Type | Description  | Notes
 # **updateHolidayCalendar**
 > \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar updateHolidayCalendar($holiday_calendar_id, $body)
 
-Updates the holiday calendar.
+Activates or deactivates the holiday calendar.
 
-Updates the provided holiday calendar and returns the new holiday calendar object version.
+Set the active flag within the HolidayCalendar model (body) to your desired value to activate or deactivate the holiday calendar. This is the only supported operation. Returns the updated holiday calendar object version.
 
 ### Example
 ```php
@@ -375,8 +375,8 @@ $apiInstance = new Coucounco\Airkey\Swagger\Client\Api\HolidayCalendarsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar to be updated
-$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar | Holiday calendar to be updated
+$holiday_calendar_id = 789; // int | Unique identifier of the holiday calendar to be activated/deactivated
+$body = new \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar(); // \Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar | Holiday calendar to be activated/deactivated
 
 try {
     $result = $apiInstance->updateHolidayCalendar($holiday_calendar_id, $body);
@@ -391,8 +391,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar to be updated |
- **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)| Holiday calendar to be updated |
+ **holiday_calendar_id** | **int**| Unique identifier of the holiday calendar to be activated/deactivated |
+ **body** | [**\Coucounco\Airkey\Swagger\Client\Model\HolidayCalendar**](../Model/HolidayCalendar.md)| Holiday calendar to be activated/deactivated |
 
 ### Return type
 

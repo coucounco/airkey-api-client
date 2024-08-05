@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **version** | **int** | Current version number of the medium | 
 **name** | **string** | Name of the medium (max. 50 characters) | [optional] 
 **medium_identifier** | **string** | Identifier of the medium | [optional] 
+**locking_system_id** | **int** | Technical identifier of the medium | [optional] 
 **medium_type** | **string** | Type of the medium | [optional] 
 **last_synchronized_on** | **string** | Timestamp of the last synchronization (ISO 8601-format compliant date with time in UTC, milliseconds precision: yyyy-mm-ddThh:mm:ss.SSSZ) | [optional] 
 **comment** | **string** | Comment (max. 500 characters) | [optional] 
